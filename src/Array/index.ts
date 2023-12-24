@@ -1,7 +1,7 @@
 import promptSync from 'prompt-sync';
 
 
-export const getConsole = () => {
+export const getUserName = () => {
     const prompt = promptSync();
 
     const firstName = prompt('what is your name :- ');

@@ -1,5 +1,3 @@
-// import { getConsole } from "./Array";
+import { getUserName } from "./Array/index.js";
 
-import { getConsole } from "./Array/index.js";
-
-console.log(getConsole())
+console.log(getUserName())

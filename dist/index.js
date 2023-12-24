@@ -1,4 +1,3 @@
-// import { getConsole } from "./Array";
-import { getConsole } from "./Array/index.js";
-console.log(getConsole());
+import { getUserName } from "./Array/index.js";
+console.log(getUserName());
 //# sourceMappingURL=index.js.map
