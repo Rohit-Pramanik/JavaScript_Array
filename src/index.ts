@@ -1,3 +1,7 @@
-import { getUserName } from "./Array/index.js";
+// import { getUserName } from "./Array/index.js";
 
-console.log(getUserName())
+import { getConcatExample } from "./Concat/index.js";
+
+// console.log(getUserName())
+
+console.log(getConcatExample());
