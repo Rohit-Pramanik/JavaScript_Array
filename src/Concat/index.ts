@@ -1,3 +1,4 @@
+import PromptSync from "prompt-sync";
 import DummyData from "../DummyData/index.js";
 
 const ProgrammingLanguage: string[] = ["JavaScript", "Python", "Java"];
@@ -48,6 +49,18 @@ const level9 = () => {
   ]);
 };
 
+const level10 = () => {
+  const prompt = PromptSync();
+  const promptArray = prompt("Give any array :- ");
+  try {
+    const arrayData = JSON.parse(promptArray);
+    console.log({ data: typeof arrayData, arrayData });
+    return randomList.concat(arrayData);
+  } catch (error) {
+    return "Array was not correct";
+  }
+};
+
 export const getConcatExample = () => {
   return [
     level1(),
@@ -59,5 +72,6 @@ export const getConcatExample = () => {
     level7(),
     level8(),
     level9(),
+    level10(),
   ];
 };
